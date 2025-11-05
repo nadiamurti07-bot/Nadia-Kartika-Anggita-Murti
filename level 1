@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int monsterDetik;
+    cout << "Masukkan bilangan >1(satuan detik) : ";
+    cin >> monsterDetik;
+
+    int jamPetualanganAkuhhhh = monsterDetik / 3600;
+    int sisaDetikTerakhirMu = monsterDetik % 3600;
+    int menitmenitBersamamu = sisaDetikTerakhirMu / 60;
+    int detikdetikJantungku = sisaDetikTerakhirMu % 60;
+    
+    cout << "\nHasil Konversi   :\n";
+    cout << monsterDetik << "detik = " << jamPetualanganAkuhhhh<< "Jam, " << menitmenitBersamamu << "Menit, " << detikdetikJantungku << "Detik."<< endl;
+
+    return 0;
+}
