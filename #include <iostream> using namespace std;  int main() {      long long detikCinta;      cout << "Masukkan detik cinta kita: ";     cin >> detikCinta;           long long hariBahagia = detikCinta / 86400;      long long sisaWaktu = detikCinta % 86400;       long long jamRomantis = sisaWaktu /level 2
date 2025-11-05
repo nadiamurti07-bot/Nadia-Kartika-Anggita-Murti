@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    long long detikCinta; 
+    cout << "Masukkan detik cinta kita: ";
+    cin >> detikCinta;
+
+    
+    long long hariBahagia = detikCinta / 86400; 
+    long long sisaWaktu = detikCinta % 86400; 
+
+    long long jamRomantis = sisaWaktu / 3600; 
+    sisaWaktu %= 3600; 
+
+    long long menitCeria = sisaWaktu / 60; 
+    long long detikJantung = sisaWaktu % 60; 
+
+    
+    cout << "\nWah, " << detikCinta << " detik cinta kita adalah:\n";
+    cout << hariBahagia << " hari bahagia bersama \n";
+    cout << jamRomantis << " jam petualangan romantis \n";
+    cout << menitCeria << " menit ceria hati \n";
+    cout << detikJantung << " detik jantung berdegup kencang \n";
+    cout << "Setiap detik bersamamu adalah keajaiban yang bikin aku jatuh cinta lagi!" << endl;
+
+    return 0;
+}
